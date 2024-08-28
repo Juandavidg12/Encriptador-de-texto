@@ -59,7 +59,6 @@ Eso es todo. ¡Ahora puedes comenzar a encriptar y desencriptar mensajes!
 encriptador-de-texto/
 │
 ├── img/
-│   └── favicon.png          # Ícono de la aplicación
 │   └── 1.png                # Imagen predeterminada
 │   └── encriptado.png       # Imagen que se muestra al encriptar
 │   └── desencriptar.png     # Imagen que se muestra al desencriptar
