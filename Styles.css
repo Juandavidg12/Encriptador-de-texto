@@ -1,0 +1,258 @@
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo del contenedor principal */
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #dad0f3;
+  }
+  
+  /* Estilo del área de texto */
+  .texto {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #dad0f3;
+  }
+
+  /* Placeholder del área de texto */
+  .texto::placeholder {
+    color: #4c11ac;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Estilos para el área de texto cuando está enfocada o activa */
+  .texto:focus,
+  .texto:active {
+    border: none;
+    outline: none;
+  }
+  
+  /* Estilos para la sección de términos */
+  .terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+  }
+  
+  /* Estilo del texto en la sección de términos */
+  .terminos p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+  }
+  
+  /* Estilos para los botones */
+  .botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+  }
+  
+  /* Estilo para el botón de encriptar */
+  .btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 20%;
+    background-color: #4c11ac;
+    border-radius: 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Estilo para el botón de desencriptar */
+  .btn-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 20%;
+    background: #d8dfe8;
+    border: 1px solid #4c11ac;
+    border-radius: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #4c11ac;
+  }
+  
+  /* Efecto hover para los botones */
+  .btn-desencriptar:hover,
+  .btn-encriptar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+  }
+  
+  /* Estilos para el contenedor de encriptado */
+  .encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+  
+  /* Estilos para el mensaje encriptado */
+  .mensaje-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+  }
+  
+  /* Estilo del encabezado en el mensaje encriptado */
+  .mensaje-encriptado h2 {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #4c11ac;  
+  }
+  
+  /* Estilo del texto en el mensaje encriptado */
+  .mensaje-encriptado p {
+    width: 80%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #6337a8;
+  }
+  
+  /* Estilo de la imagen en el contenedor encriptado */
+  .encriptado img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+  }
+  .btn-copiar {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    padding: 2%;
+    width: 20%;
+    background-color: #4c11ac;
+    border-radius: 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-copiar:hover {
+    background-color: #3a0d89;
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 57.5em) {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    .encriptar {
+      width: 100%;
+    }
+    .texto {
+      width: 80%;
+      height: 60%;
+      left: 10%;
+      top: 5%;
+    }
+    .terminos {
+      width: 80%;
+      left: 10%;
+      top: 67%;
+    }
+    .terminos p {
+      font-size: 16px;
+    }
+    .botones {
+      width: 80%;
+      left: 10%;
+      top: 70%;
+    }
+    .btn-encriptar,
+    .btn-desencriptar {
+      width: 48%;
+      border-radius: 16px;
+    }
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover {
+      margin: 0.3%;
+      width: 47.5%;
+      padding: 1.8%;
+    }
+    .encriptado {
+      width: 80%;
+      height: 15%;
+      left: 10%;
+      top: 80%;
+    }
+    .mensaje-encriptado {
+      width: 100%;
+      top: 5%;
+    }
+    .encriptado img {
+      top: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
